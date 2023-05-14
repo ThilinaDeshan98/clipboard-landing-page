@@ -1,0 +1,52 @@
+@use './mixin' as *;
+@use './variables' as *;
+
+.companies {
+    width: 88%;
+    margin: 5rem auto 0 auto;
+    display: grid;
+    justify-content: center;
+    gap: 3rem;
+
+    @media (min-width:600px) {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+        margin-top: 10rem;
+        
+        .company-img {
+            position: relative;
+
+            img {
+                @include absoluteCenter;
+            }
+        }
+    
+    }
+}
+
+.download {
+    width: 88%;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        width: 75%;
+        margin: 9rem auto 0 auto;
+        color: $secondary-dark-blue;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 1rem;
+        color: $secondary-grayish-blue;
+        margin-bottom: 3rem;
+
+        @media (min-width:600px) {
+            width: 55%;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+    }
+}

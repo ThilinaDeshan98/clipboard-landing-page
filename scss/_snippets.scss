@@ -1,0 +1,145 @@
+@use './variables' as *;
+@use './mixin' as *;
+
+.snippets {
+    width: 88%;
+    margin: 0 auto;
+
+    @media (min-width:600px) {
+        width: 95%;
+    }
+
+    h2 {
+        text-align: center;
+        color: $secondary-dark-blue;
+        width: 80%;
+        margin: 8rem auto 0 auto;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 1rem;
+        line-height: 1.5;
+        color: $secondary-grayish-blue;
+
+        @media (min-width:600px) {
+            width: 55%;
+            margin: 1rem auto 0 auto;
+        }
+    }
+
+    .flex {
+        margin-top: 4rem;
+        display: grid;
+
+        .img-container {
+            width: 88%;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .flex__details {
+            margin-top: 3rem;
+
+            h3 {
+                text-align: center;
+                color: $secondary-dark-blue;
+            }
+
+            p {
+                margin-bottom: 3rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width:600px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+
+            .flex__details {
+
+                h3 {
+                    text-align: left;
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    text-align: start;
+                    margin-left: 0;
+                    margin-top: .2rem;
+                    font-size: 1rem;
+                    width: 68%;
+                }
+            }
+        }
+    }
+}
+
+// clipboard section
+.access-clipboard {
+    width: 88%;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        color: $secondary-dark-blue;
+        width: 80%;
+        margin: 8rem auto 0 auto;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 1rem;
+        line-height: 1.5;
+        color: $secondary-grayish-blue;
+    }
+
+    .clipboard-img {
+        width: 88%;
+        margin: 4rem auto 0 auto;
+
+        img {
+            width: 100%;
+        }
+
+        @media (min-width:600px) {
+            width: 60%;
+        }
+    }
+
+    #supercharge {
+        margin-top: 4rem;
+    }
+
+    .icon-grid {
+        margin-top: 3rem;
+        display: grid;
+        gap: 1.5rem;
+
+        @media (min-width:600px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .col {
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+
+        h3, p {
+            text-align: center;
+        }
+
+    }
+}
