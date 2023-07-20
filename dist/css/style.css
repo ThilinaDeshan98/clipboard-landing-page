@@ -162,11 +162,12 @@ header .logo {
 }
 .access-clipboard .icon-grid h3, .access-clipboard .icon-grid p {
   text-align: center;
+  color: hsl(210, 10%, 33%);
 }
 
 .companies {
   width: 88%;
-  margin: 5rem auto 0 auto;
+  margin: 10rem auto 10rem auto;
   display: grid;
   justify-content: center;
   gap: 3rem;
